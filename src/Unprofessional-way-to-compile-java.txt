@@ -1,0 +1,11 @@
+You can compile java like :-
+eg:   java Hello.java
+
+Syntax = java filename.java
+
+This has been introduced since java 17 but it is not the right way!!!!!!!!!!!!
+
+Actual production code must be compiled like:
+
+example: javac Hello.java
+         java Hello
