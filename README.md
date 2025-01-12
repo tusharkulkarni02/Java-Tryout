@@ -1,6 +1,6 @@
-##Java-Tryout
+## Java-Tryout
 
-***#### This contains all the code for Java from basic to advanced level.***
+*** This contains all the code for Java from basic to advanced level.***
 ---
 To store .class files in the bin folder while compiling Java code, you can use the -d flag with the javac command. The -d option allows you to specify the destination directory for the compiled .class files.
 Steps to Store .class Files in the bin Folder Set Up Your Project Directory Structure
