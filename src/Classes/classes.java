@@ -15,7 +15,7 @@ public class classes {
       Important Points
       Declaration: 
       
-      Calculator calc; 
+      Calculator calc; // Points to null currently
       
       only declares a reference to an object but does not create the object in memory.
       
@@ -27,7 +27,7 @@ public class classes {
 
       calc.add(n1, n2); // Throws NullPointerException because calc is null   
     */  
-   Calculator calc = new Calculator();
+   Calculator calc = new Calculator(); // Here using new allocates memory for the class object, and returns the referece of that memory.
    int res = calc.add(n1,n2);
 
    System.out.println("res : " + res);
