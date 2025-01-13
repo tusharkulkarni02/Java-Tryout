@@ -15,6 +15,7 @@
  * NOTE: Your will ask if we are in child class , super() access the class above it.
  *        What about super() of Parent?
  *        Ans :  Object class -> this is the universal class for everything in JAVA.
+ *              Every class in java the Object class
  */
 
 
@@ -37,7 +38,8 @@ class A{
 class B extends A{
 
   public B(int n){
-    super();
+    this(); // this will call the constructor of the same class
+    //super()
     System.out.println("Parameterized constructor of B");
   }
 
@@ -59,6 +61,24 @@ public class usingSuper {
       
       B obj2 = new B(3); // this will call the default constructor of A then -> parameterized constructor B
 
+      System.out.println("\nTrying to access the constructor of the same class\n");
 
+
+      B obj3 = new B(4); // will call constructtor a, constructor B , parameterised constructor B
+
+      /*
+       * OUTPUTS:
+Default constructor of A
+Constructor of B
+Default constructor of A
+Constructor of B
+Parameterized constructor of B
+
+Trying to access the constructor of the same class
+
+Default constructor of A
+Constructor of B
+Parameterized constructor of B
+       */
   }
 }
