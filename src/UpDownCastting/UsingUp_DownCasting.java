@@ -20,6 +20,7 @@ public class UsingUp_DownCasting {
   
     // Now we use method of A.
     obj.show1();
+    // doing obj.show2(), will not work.
 
     // But now we cant access the methods of B. i.e obj.show2() ---> not accessible
 
